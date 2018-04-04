@@ -13,7 +13,7 @@
                     <% } %>
                       <% } %>
         </div>
-        <h2>Scenario:
+        <h2>Scénario:
                 <small><%= scenario.name %></small>
             </h2>
 
@@ -139,15 +139,15 @@
                                     <% } %>
 
                                       <% if (step.result.error_message) { %>
-                                        <a href="#error<%= scenarioIndex %><%= stepIndex %>-error" data-toggle="collapse">+ Show Error</a>
+                                        <a href="#error<%= scenarioIndex %><%= stepIndex %>-error" data-toggle="collapse">+ Voir l'erreur</a>
                                         <% } %>
 
                                           <% if (step.text) { %>
-                                            <a href="#info<%= scenarioIndex %><%= stepIndex %>-text" data-toggle="collapse">+ Show Info</a>
+                                            <a href="#info<%= scenarioIndex %><%= stepIndex %>-text" data-toggle="collapse">+ Voir les informations</a>
                                             <% } %>
 
                                               <% if (step.image) { %>
-                                                <a href="#info<%= scenarioIndex %><%= stepIndex %>-image" data-toggle="collapse">Screenshot +</a>
+                                                <a href="#info<%= scenarioIndex %><%= stepIndex %>-image" data-toggle="collapse">Capture d'écran +</a>
                                                 <% } %>
 
                                                   <% if (!_.isEmpty(step.attachments)) { %>

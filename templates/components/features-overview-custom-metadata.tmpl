@@ -1,7 +1,7 @@
 <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="x_panel">
         <div class="x_title">
-            <h2>Features overview</h2>
+            <h2>Aperçu des fonctionnalités</h2>
             <ul class="nav navbar-right panel_toolbox">
                 <li>
                     <a class="collapse-link">
@@ -18,26 +18,26 @@
                        width="100%">
                     <thead>
                     <tr>
-                        <th>Feature name</th>
+                        <th>Nom de la fonctionnalité</th>
                         <th><i class="fa fa-tags fa-lg" title="Tags"></i></th>
-                        <th>Status</th>
+                        <th>Statut</th>
                         <% _.each(suite.features[0].metadata, function(metadatum, metadatumIndex) { %>
                         <th><%= metadatum.name %></th>
                         <%});%>
                         <th>Total</th>
-                        <th>Passed</th>
-                        <th>Failed</th>
+                        <th>Réussi</th>
+                        <th>Échec</th>
                         <% if(+suite.scenarios.pending > 0) { %>
-                        <th>Pending</th>
+                        <th>En attente</th>
                         <% } %>
                         <% if(+suite.scenarios.skipped > 0) { %>
-                        <th>Skip</th>
+                        <th>Passé</th>
                         <% } %>
                         <% if(+suite.scenarios.notdefined > 0) { %>
-                        <th>Undefined</th>
+                        <th>Indéfini</th>
                         <% } %>
                         <% if(+suite.scenarios.ambiguous > 0) { %>
-                        <th>Ambiguous</th>
+                        <th>Ambigüe</th>
                         <% } %>
                     </tr>
                     </thead>

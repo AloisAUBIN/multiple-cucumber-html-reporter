@@ -1,5 +1,5 @@
 <div class="x_title">
-    <h2>Scenarios</h2>
+    <h2>Scénarios</h2>
     <ul class="nav navbar-right panel_toolbox">
         <li>
             <a class="collapse-link">
@@ -13,14 +13,14 @@
     <table class="chart">
         <tr>
             <th>
-                <p>Chart</p>
+                <p>Graphique</p>
             </th>
             <th>
                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                    <p class="">Status</p>
+                    <p class="">Statut</p>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                    <p class="">Progress</p>
+                    <p class="">Progression</p>
                 </div>
             </th>
         </tr>
@@ -35,7 +35,7 @@
                         <td>
                             <p data-toggle="tooltip" data-placement="left" title="Scenario passed">
                                 <i class="fa fa-check-circle passed-color"></i>
-                                Passed
+                                Réussi
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.passedPercentage %> %</td>
@@ -44,7 +44,7 @@
                         <td>
                             <p data-toggle="tooltip" data-placement="left" title="Scenario failed">
                                 <i class="fa fa-exclamation-circle failed-color"></i>
-                                Failed
+                                Échoué
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.failedPercentage %> %</td>
@@ -54,7 +54,7 @@
                         <td>
                             <p data-toggle="tooltip" data-placement="left" title="Scenario is pending">
                                 <i class="fa fa-minus-circle pending-color"></i>
-                                Pending
+                                En attente
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.pendingPercentage %> %</td>
@@ -65,7 +65,7 @@
                         <td>
                             <p data-toggle="tooltip" data-placement="left" title="Scenario is skipped">
                                 <i class="fa fa-arrow-circle-right skipped-color"></i>
-                                Skipped
+                                Passé
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.skippedPercentage %> %</td>
@@ -77,7 +77,7 @@
                             <p data-toggle="tooltip" data-placement="left"
                                title="Scenario has double step implementation and failed because of that.">
                                 <i class="fa fa-flash ambiguous-color"></i>
-                                Ambiguous
+                                Ambigüe
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.ambiguousPercentage %> %</td>
@@ -88,7 +88,7 @@
                         <td>
                             <p data-toggle="tooltip" data-placement="left" title="Scenario has no step implmentation.">
                                 <i class="fa fa-question-circle not-defined-color"></i>
-                                Not defined
+                                Indéfini
                             </p>
                         </td>
                         <td class="percentage"><%= scenarios.notdefinedPercentage %> %</td>
@@ -99,7 +99,7 @@
         </tr>
         <% if (!overviewPage && suite.displayDuration) { %>
             <tr>
-                <th> Total duration:</th>
+                <th> Durée totale:</th>
                 <tr><td><%= feature.time %></td></tr>
             </tr>
         <% } %>
